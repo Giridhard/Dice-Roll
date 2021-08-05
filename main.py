@@ -1,4 +1,5 @@
 from random import randint
+import time
 def diceroll():
     dice1=randint(1,6)
     dice2=randint(1,6)
@@ -14,6 +15,8 @@ def diceroll():
 user_input=input("Enter 'roll' to roll the dice: ").lower()
 
 if user_input=="roll":
+    print(f'dice are rolling..')
+    time.sleep(2)
     diceroll()
 
 else:
